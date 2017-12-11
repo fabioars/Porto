@@ -151,14 +151,11 @@ The Containers (high-level code) relies *indirectly* on the Ship (low-level code
 <a id="Layers-Diagram"></a>
 ## Layers Diagram
 
-
-![](https://s19.postimg.org/cgh6yqtn7/porto_layers.png)
+![](/assets/porto_layers.png)
 
 #### Visual Image:
 
-![](https://s19.postimg.org/d79x4iw0j/porto_visual_diagram.png)
-
-
+![](/assets/porto_visual_diagram.png)
 
 
 
@@ -292,7 +289,7 @@ Routes - Controllers - Requests - Actions - Tasks - Models - Views - Transformer
 ### Main Components Interaction Diagram
 
 
-![](https://s19.postimg.org/67vv55w2b/porto_container.png)
+![](/assets/porto_container_interactions.png)
 
 
 <a id="Request-Life-Cycle"></a>
@@ -319,7 +316,7 @@ Routes - Controllers - Requests - Actions - Tasks - Models - Views - Transformer
 
 You can add these Components when you need them, based on your App needs, however some of them are highly recommended:
 
-Repositories - Exceptions - Criteria - Policies - Tests - Middlewares - Service Providers - Events - Commands - DB Migrations - DB Seeders - Data Factories - Contracts - Traits - Jobs - ValueObjects - Mails - Notifications...
+Repositories - Exceptions - Criteria - Policies - Tests - Middlewares - Service Providers - Events - Listeners - Commands - Migrations - Seeders - Factories - Contracts - Traits - Jobs - Values - Transporters - Mails - Notifications...
 
 
 
@@ -545,8 +542,9 @@ Container
 	├── Actions
 	├── Tasks
 	├── Models
-	├── ValueObjects
+	├── Values
 	├── Events
+	├── Listeners
 	├── Policies
 	├── Exceptions
 	├── Contracts
@@ -564,6 +562,7 @@ Container
 	│   ├── Criteria
 	│   ├── Repositories
 	│   ├── Validators
+	│   ├── Transporters
 	│   └── Rules
 	├── Tests
 	│   ├── Unit
